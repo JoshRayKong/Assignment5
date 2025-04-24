@@ -1,0 +1,150 @@
+:root {
+    --orange: #ee8b22;
+    --gold: #f7ac1a;
+    --peach: #f4e4d1;
+    --mint: #cfe4c2;
+    --green: #afdab5;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: white;
+    color: #333;
+    padding: 20px;
+  }
+  
+/* { This is the Nav bar}*/
+
+    #navbar {
+        background: var(--peach);
+        padding: 0 20px; /* Reduce padding to bring items closer */
+        border-radius: 10px;
+        margin-bottom: 40px;
+        display: flex; /* Add flexbox to the navbar */
+        align-items: center; /* Align items vertically */
+        justify-content: flex-start; /* Align items to the start */
+        gap: 20px; /* Add spacing between logo and menu */
+    }
+
+  h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid var(--mint);
+  }
+  
+    #logo {
+        width: 100px;
+        height: auto;
+    }
+  button {
+    background-color: var(--gold);
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .menu{
+    display: flex;
+    gap: 70px;
+    margin: 0;
+    flex-grow: 1;
+    justify-content: right;
+    padding-right: 200px;
+  }
+
+  .menu li  {
+    list-style: none;
+    margin-right: 15px;
+    display: inline;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--orange);
+    font-weight: 400;
+    padding: 5px 10px;
+    background-color: transparent;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: inherit;
+  } 
+  .menu li:hover {
+    color: var(--gold);
+}
+
+    #menu2 li a {
+        text-decoration: none;
+        list-style: none;
+    }
+
+  .feature {
+    display: flex;
+    margin: 30px 0;
+    background: var(--peach);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .image-box {
+    width: 150px;
+    height: 150px;
+    background: var(--mint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+  .text-box {
+    flex: 1;
+    margin-left: 20px;
+    font-family: poppins;
+    font-size: 18px;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 30px 0;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    background: var(--green);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    color: #333;
+  }
+  
+  .footer-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 20px;
+    gap: 50px;
+  }
